@@ -3,12 +3,11 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "HASURA_PAT": "${input:HASURA_PAT}",
         "terminal.integrated.shell.linux": "/bin/bash",
         "terminal.integrated.shellArgs.linux": ["-l"]
       },
       "extensions": ["HasuraHQ.hasura"]
     }
   },
-  "postCreateCommand": "curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v1/get.sh | bash && ddn login --pat {{input:HASURA_PAT}}"
+  "postCreateCommand": "curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v1/get.sh | bash"
 }
