@@ -2,11 +2,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "watch",
+            "label": "dev",
             "type": "shell",
             "command": "ddn",
             "args": [
-                "watch",
+                "dev",
                 "--dir",
                 "."
             ],

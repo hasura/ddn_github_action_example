@@ -5,8 +5,8 @@
             "request": "launch",
             "type": "node",
             "program": "${workspaceFolder}",
-            "name": "DDN Watch",
-            "preLaunchTask": "watch",
+            "name": "DDN dev",
+            "preLaunchTask": "dev",
             "cwd": "${workspaceFolder}"
         }
     ]
