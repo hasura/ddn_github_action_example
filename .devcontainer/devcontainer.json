@@ -1,0 +1,20 @@
+{
+  "name": "Hasura DDN Codespace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {}
+  },
+  "runArgs": ["-v", "/var/run/docker.sock:/var/run/docker.sock"],
+  "remoteUser": "codespace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["HasuraHQ.hasura"],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.shellArgs.linux": ["-l"]
+      }
+    }
+  },
+
+  "postCreateCommand": "curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v1/get.sh | bash"
+}
